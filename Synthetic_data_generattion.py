@@ -26,7 +26,7 @@ random.shuffle(female_first_names)
 random.shuffle(total_surnames)
 
 # Load real dataset and fill missing values
-data = pd.read_csv("../Election-Data/Copy-ElectionVoterFile-01-9-2024.csv", low_memory=False)
+data = pd.read_csv("ElectionVoterFile.csv", low_memory=False)
 data.fillna({'Gender': 'Missing', 'FirstName': 'Missing', 'LastName': 'Missing'}, inplace=True)
 grouped = data.groupby(['Gender', 'FirstName', 'LastName']).size().reset_index(name='Counts')
 
