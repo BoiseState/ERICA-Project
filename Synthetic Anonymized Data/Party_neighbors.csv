@@ -1,0 +1,6 @@
+,Neighbor1,Neighbor2,Neighbor3,Neighbor4
+Party-1,"('Party-2', 2.0)","('Party-3', 2.0)","('Party-4', 2.0)","('Party-5', 2.0)"
+Party-2,"('Party-1', 2.0)","('Party-3', 2.0)","('Party-4', 2.0)","('Party-5', 2.0)"
+Party-3,"('Party-1', 2.0)","('Party-2', 2.0)","('Party-4', 2.0)","('Party-5', 2.0)"
+Party-4,"('Party-1', 2.0)","('Party-2', 2.0)","('Party-3', 2.0)","('Party-5', 2.0)"
+Party-5,"('Party-1', 2.0)","('Party-2', 2.0)","('Party-3', 2.0)","('Party-4', 2.0)"
