@@ -1,0 +1,5 @@
+,Neighbor1,Neighbor2,Neighbor3
+Gender-1,"('Gender-2', 1.41)","('Gender-3', 1.41)","('Gender-4', 1.41)"
+Gender-2,"('Gender-1', 1.41)","('Gender-3', 1.41)","('Gender-4', 1.41)"
+Gender-3,"('Gender-1', 1.41)","('Gender-2', 1.41)","('Gender-4', 1.41)"
+Gender-4,"('Gender-1', 1.41)","('Gender-2', 1.41)","('Gender-3', 1.41)"
