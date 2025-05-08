@@ -36,8 +36,6 @@ These files should contain lists of names that are pre-cleaned and serialized us
 ## Usage
 To run the script, ensure all prerequisite libraries are installed and execute the Python script in your preferred environment. The script reads the specified input data file, processes it, and outputs a CSV file containing the synthetic data.
 
-```bash
-python generate_synthetic_data.py
 
 
 ## What's Inside `Synthetic Anonymized Data/`
