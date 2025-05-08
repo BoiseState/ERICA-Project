@@ -3,6 +3,36 @@
 ## Overview
 This project is designed to generate a synthetic dataset that mirrors the structure and statistical properties of a real voter database. The synthetic data generation process utilizes various Python libraries to handle data manipulation and generation tasks, ensuring the preservation of general patterns and distributions from the original data without compromising personal information.
 
+This dataset serves two primary purposes:
+
+1. **Researcher Familiarization** – Enables users to understand the structure, attributes, and semantics of the voter data before requesting access to the real anonymized dataset from the Idaho Secretary of State.
+2. **Experimentation and Model Prototyping** – Supports development and validation of algorithms (e.g., fraud detection, record linkage, deduplication) in a privacy-safe setting.
+
+
+## What's Inside `Synthetic Anonymized Data/`
+
+This folder contains:
+
+- **`anonymized_data_with_fraud_instance.csv`**  
+  A synthetic, fully anonymized voter registration dataset that includes injected fraudulent instances for testing and evaluation.
+
+- **`<Field>_neighbors.csv`**  
+  Example: `FirstName_neighbors.csv`, `ZIP_neighbors.csv`, etc.  
+  These files provide precomputed **top-k similarity neighbor lists** for each anonymized value within a field. Each file contains:
+  - A reference value (e.g., `Gender-1`)
+  - Its most similar alternatives and their corresponding similarity scores (Euclidean distance)
+  - Up to 10 neighbors per entry (fewer if unique values are limited)
+
+### Example (from `Gender_neighbors.csv`):
+
+| Neighbor1 | Neighbor2             | Neighbor3             |
+|-----------|-----------------------|------------------------|
+| Gender-1  | ('Gender-2', 1.41)    | ('Gender-3', 1.41)     |
+| Gender-2  | ('Gender-1', 1.41)    | ('Gender-3', 1.41)     |
+
+These files help researchers understand value-level similarities for modeling fuzziness, similarity-based joins, and identity linkage — **without needing access to the real dataset**, which requires formal approval.
+
+
 ## Requirements
 - Python 3.x
 - Pandas: For data manipulation and analysis.
